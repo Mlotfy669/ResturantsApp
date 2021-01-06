@@ -49,7 +49,7 @@ public class ResturantActivity extends AppCompatActivity {
             @Override
             public void onItemClick(int id) {
                 Intent i=new Intent(ResturantActivity.this,OrderActivity.class);
-                i.putExtra("restId", (id-1));
+                i.putExtra("restId", (id));
                 startActivity(i);
             }
         });
