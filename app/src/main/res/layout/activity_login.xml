@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_30sdp"
+    android:paddingRight="@dimen/_30sdp"
+    android:paddingTop="@dimen/_170sdp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/loginbackground"
+    tools:context=".ui.activites.LoginActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxBackgroundMode="outline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:drawableRight="@drawable/ic_phone"
+            android:backgroundTint="#FFEB3B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:id="@+id/editTextPhone"
+            android:hint="Phone Number"
+            android:tooltipText="Name"
+            android:maxLength="10"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxBackgroundMode="outline"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:backgroundTint="#FFEB3B"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPassword"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:tooltipText="Name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:textColor="#000000"
+        android:textSize="@dimen/_20sdp"
+        android:backgroundTint="#ffc83d"
+        android:id="@+id/btnLogin"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_marginTop="56dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+</LinearLayout>

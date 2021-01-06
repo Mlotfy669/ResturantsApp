@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Resturants List</string>
+    <string name="Number">Number</string>
+    <string name="food_item">Item</string>
+    <string name="food_id">ID</string>
+    <string name="food_type">Type</string>
+</resources>
